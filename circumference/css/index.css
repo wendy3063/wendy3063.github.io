@@ -1,0 +1,378 @@
+	*{margin: 0;padding:0;}
+	@keyframes project{
+					10%{top: 25%;}
+					10.1%{top:25%;transform:rotateZ(0deg);left:20%;margin-top:-35px;}
+					45%{top:25%;transform:rotateZ(585deg);left:67%;margin-top:-35px;}
+					60%{top: 68%;transform:rotateZ(585deg);left: 67%;border-radius: 0;margin-top:-35px;}
+					60.00001%{top:68%;transform:rotateZ(585deg);left:67%;display: none;margin-top:-35px;}
+					60.00002%{top: 74.5%;;transform:rotateZ(585deg);left: 67%;display: block;border-radius:50% ;margin-top:-35px;}
+					70%{top: 74.5%;left: 67%;margin-top:-25px;}
+					89%{top: 74.5%;left: 31%;margin-top:-25px;}
+					100%{top: 110%;left: 31%;border-radius: 50%;margin-top:-25px;}
+				}
+/*第一页*/
+	#one{background: #000;}
+	.side{
+		width: 30px;
+		height: 30px;
+		position:absolute;
+		top: 0;
+		left:20%;
+		background:#fff;
+		animation:project 10s infinite;
+		}
+	.typeface{
+		font-size: 70px;
+		font-weight: 600;
+		color:#fff;
+		position: absolute;
+		top:40%;
+		right:35%;
+		margin-left:35px;
+		
+	}	
+	.wire-top{
+		width:65%;
+		height:1px;
+		background: #fff;
+		position: absolute;
+		top:25%;
+		left:0
+		}
+	.wire-bottom{
+		width:65%;
+		height:1px;
+		background: #fff;
+		position: absolute;
+		top:75%;
+		right:0}
+	.logo{
+		width:111px;
+		height:111px;
+		background: url(../index/img/one01.png) no-repeat center;
+		background-position:-69px -44px;
+		position:fixed;
+		top:5%;
+		left:5%;
+		z-index: 10;
+	}
+	.menu{
+		width:69px;
+		height:52px;
+		position:fixed;
+		top:5%;
+		right:5%;
+		background: url(../index/img/one01.png) no-repeat center;
+		background-position:-69px -252px;
+		z-index: 10;
+	}
+	#two,#three,#four,#five,#six,#seven{
+		min-width:100%;
+		min-height:100%;
+		position: relative;
+	}
+	/*************************************/
+	#two{
+		background: url(../index/img/002.jpg) no-repeat center;
+		background-size:cover ;
+	}
+	.two-top{
+		width:43%;
+		height:36%;
+		position:absolute;
+		top:0;
+		left:28%;
+	}
+	.two-bottom{
+		width:43%;
+		height:36%;
+		position:absolute;
+		bottom:0;
+		left:28%;
+		border-radius:40%;
+	}
+	.twoWz{
+		width:100;
+		height:10%;
+		position: absolute;
+		top:45%;
+		text-align: center;
+		font-size:70px;
+		color:#fff;
+	}
+	/******************************************/
+	#three{
+		background: url(../index/img/003.jpg) no-repeat;
+		background-size:cover;
+	}
+	.threeBox{
+		width:364px;
+		height:100px;
+		position: absolute;
+		bottom:30%;
+		right:12%;
+	}
+	.threeLeft{
+		width:17%;
+		height: 60%;
+		position: absolute;
+		top:0;
+		left:0;
+		border-top: 4px solid #fff;
+		border-left: 4px solid #fff;
+		z-index: 10;
+	}
+	.threeRight{
+		width:17%;
+		height: 60%;
+		position: absolute;
+		bottom:0;
+		right:0;
+		border-right: 4px solid #fff;
+		border-bottom: 4px solid #fff;
+		z-index: 10;
+	}
+	.threeCon{
+		width:100%;
+		height:90%;
+		margin-top: 2%;
+	}
+	.threeCon span{
+		width: 100%;
+		font-size: 50px;
+		font-weight: 600;
+		color:#fff;
+	}
+	.threeCon span b{
+		font-size: 64px;
+		color:#dad9d5;
+		width:50%;
+		height:50%;
+		background:#fff;
+		margin: 0 3%;
+		padding:3%;
+		border-radius: 50%;
+	}
+	.threeT{
+		width:300px;
+		height:4%;
+		/*background: red;*/
+		position: absolute;
+		bottom:20%;
+		right:0;
+		text-decoration:underline;
+		border-bottom: 1px solid #fff;
+	}
+	.threeT span{
+		font-size:30px;
+		color:#fff;
+		position: absolute;
+		bottom:0;
+		left:0;
+		line-height: 26px;
+		font-weight: 100;
+	}
+	
+	
+	/******************************/
+	#four{
+		background: url(../index/img/004.jpg) no-repeat;
+		background-size:cover;
+	}
+	.fourBox{
+		width:385px;
+		height:140px;
+		position: absolute;
+		bottom:30%;
+		left:15%;
+		padding-left: 14px;
+	}
+	.fourLeft{
+		width:17%;
+		height: 60%;
+		position: absolute;
+		top:0;
+		left:0;
+		border-top: 4px solid #fff;
+		border-left: 4px solid #fff;
+		z-index: 10;
+	}
+	.fourRight{
+		width:17%;
+		height: 60%;
+		position: absolute;
+		bottom:0;
+		right:0;
+		border-right: 4px solid #fff;
+		border-bottom: 4px solid #fff;
+		z-index: 10;
+	}
+	.fourCon{
+		
+		margin-top: 2%;
+	}
+	.fourCon span{
+		font-size: 50px;
+		font-weight: 600;
+		color:#fff;
+		line-height: 110px;
+	}
+	.fourCon span b{
+		font-size: 64px;
+		color:#000;
+		width:50%;
+		height:50%;
+		background:#fff;
+		margin: 0 3%;
+		padding:3%;
+		border-radius: 50%;
+	}
+	.fourT{
+		width:35%;
+		height:4%;
+		position: absolute;
+		bottom:20%;
+		left:0;
+		border-bottom: 1px solid #fff;
+	}
+	.fourT span{
+		font-size:30px;
+		color:#fff;
+		float: right;
+		width: 210px;
+		line-height: 26px;
+		font-weight: 100;
+	}
+	/***********************************/
+	#five{
+		background: url(../index/img/005.jpg) no-repeat;
+		background-size:cover;
+	}
+	#five .fiveGood{
+		color:#8191a1
+	}
+	/*******************/
+	#six{
+		background: url(../index/img/006.jpg) no-repeat;
+		background-size:cover ;
+	}
+	#seven{
+		background: url(../index/img/7.jpg) no-repeat;
+		background-size:cover ;
+	}
+	.sevenWz{
+		text-align: left;
+		font-size: 12px;
+		position: absolute;
+		top: 95%;
+		margin-left:1%;
+		color:#000
+	}
+	.sevenWz p{
+		line-height: 26px;
+		font-weight: 600;
+	}
+	
+	.box{background: #ccc;position:absolute;top:0;left:0;width: 100%;height: 100%;margin:0 auto;z-index: 10;padding-top:5%}
+	.top{width: 100%;height: 50px;}
+	.close{width: 30px;height: 30px;background:url(../index/img/ca.png) no-repeat;background-position:-65px -39px;position: absolute;top:5%;right:10%;color: #fff;cursor: pointer;}
+	.close:hover{color: red;}
+	.list{width: 150px;height: 400px;margin: auto;list-style: none;}
+	.list li{width: 180px;height:90px;text-align: center;line-height: 90px;margin: 10px;}
+	.list li a{display: block;width: 180px;height: 50px;position: absolute;z-index: 2;font-size: 30px;font-weight: 600;}
+	.active{position: relative;border:2px solid green; } 
+	.posiA{width: 72px;height: 100px;position: absolute;left:55px;top: -3px; background:#ccc;}
+	.posiB{width: 190px;height:20px;position: absolute;top: 40px;left: -5px; background:#ccc}
+	.color{color: green;}
+	.move{position: absolute;width: 120px;height: 62px;z-index:1;}
+	.list li a{color: #fff;text-decoration: none;}
+
+	
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	@media only screen and (max-width:900px ) {
+		.fourBox,.threeBox{
+			width:260px;
+			height:70px;
+			position: absolute;
+			bottom:30%;
+			right:12%;
+			padding-left: 15px;
+		}
+		.fourBox{
+			right: auto;
+			left: 15%;
+		}
+		.fourCon span,.threeCon span{
+			font-size: 36px;
+			font-weight: 600;
+			color:#fff;
+			line-height: 60px;
+		}
+		.fourCon span b,.threeCon span b{
+			font-size: 44px;
+			color:#dad9d5;
+			width:40%;
+			height:40%;
+			background:#fff;
+			margin: 0 3%;
+			padding:3%;
+			border-radius: 50%;
+		}
+		.fourCon span b{
+			color: #000;
+		}
+		.fourT,.threeT{
+			width:260px;
+			height:4%;
+			position: absolute;
+			bottom:20%;
+			right:0;
+			text-decoration:underline;
+			border-bottom: 1px solid #fff;
+		}
+		.fourT span,.threeT span{
+			font-size:26px;
+			color:#fff;
+			line-height: 24px;
+			font-weight: 100;
+			float: right;
+		}
+
+	}
+
+
+

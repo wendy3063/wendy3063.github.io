@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			html,body{width: 100%;height: 100%;}
+			img{max-width: 100%;max-height:100%;display: block;margin: auto;/*background:url(img/42.jpg)no-repeat;background-size:cover;*/}
+			.logo{
+				width:57px;
+				height:58px;
+				background: url(../index/img/1.png)no-repeat center;
+				background-position:-135px -24px;
+				position:fixed;
+				top:5%;
+				left:2%;
+				z-index: 10;
+			}
+			.menu{
+				width:33px;
+				height:27px;
+				position:fixed;
+				top:5%;
+				right:5%;
+				background: url(../index/img/1.png) no-repeat center;
+				background-position:-38px -195px;
+				z-index: 10;
+			}
+			.box{background: #ccc;position:absolute;top:0;left:0;width: 100%;height: 100%;margin:0 auto;z-index: 10;padding-top:5%}
+			.top{width: 100%;height: 50px;}
+			.close{width: 30px;height: 30px;background:url(../index/img/ca.png)no-repeat;background-position:-65px -39px;position: absolute;top:5%;right:10%;color: #fff;cursor: pointer;}
+			.close:hover{color: red;}
+			.list{width: 150px;height: 400px;margin: auto;list-style: none;}
+			.list li{width: 180px;height:90px;text-align: center;line-height: 90px;margin: 10px;}
+			.list li a{display: block;width: 180px;height: 50px;position: absolute;z-index: 2;font-size: 30px;font-weight: 600;}
+			.active{position: relative;border:2px solid green; } 
+			.posiA{width: 72px;height: 100px;position: absolute;left:55px;top: -3px; background:#ccc;}
+			.posiB{width: 190px;height:20px;position: absolute;top: 40px;left: -5px; background:#ccc}
+			.color{color: green;}
+			.move{position: absolute;width: 120px;height: 62px;z-index:1;}
+			.list li a{color: #fff;text-decoration: none;}
+
+		</style>
+	</head>
+	<body>
+		<div class="logo"></div>
+		<div class="menu"></div>
+		<img id="img" src="img/one1.jpg"/>
+		<div class="box" style="display: none;">
+			<div class="top">
+				<div class="close"></div>
+			</div>
+			<div class="move">
+					<div class='posiA'></div>
+					<div class='posiB'></div>
+			</div>
+			<ul class="list">	
+				<li>
+					<a href="##">主页</a>	
+				</li>
+				<li><a href="##">系列作品</a></li>
+				<li><a href="##">摄影构图</a></li>
+				<li><a href="##">摄影技巧</a></li>
+				<li><a href="##">摄影大师</a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			
+			var arr=["img/one1.jpg","img/one2.jpg","img/one3.jpg","img/one4.jpg","img/one5.jpg","img/one6.jpg","img/one7.jpg","img/one8.jpg","img/one9.jpg","img/one10.jpg",
+			"img/one11.jpg","img/one12.jpg","img/one13.jpg","img/one14.jpg","img/one15.jpg","img/one16.jpg","img/one17.jpg","img/one18.jpg","img/one19.jpg","img/one20.jpg"];
+			var num=0;
+			console.log(arr.length)
+			$(document).on("mousewheel DOMMouseScroll", function (event) {
+		    var delta = (event.originalEvent.wheelDelta && (event.originalEvent.wheelDelta > 0 ? 1 : -1)) ||  // chrome & ie
+		                (event.originalEvent.detail && (event.originalEvent.detail > 0 ? -1 : 1));              // firefox
+		
+		    if (delta > 0) {
+		    	if(num>=1){
+		    	num--;
+		    	}
+		    } else if (delta < 0) {
+		    	if(num<=arr.length-2){
+		    	num++;
+		    	}
+		    }
+			$("#img").attr("src",arr[num]);
+			
+			
+			
+			$(".logo").hover(function(){
+				$(".logo").css({'background-position':"-233px -24px"})  
+			},function(){
+				$(".logo").css({'background-position':"-38px -24px"})
+			}) 	
+			$(".menu").hover(function(){
+				$(".menu").css({'background-position':"-179px -195px"})  
+			},function(){
+				$(".menu").css({'background-position':"-38px -195px"})
+			}) 	
+			$(".close").hover(function(){
+				$(".close").css({'background-position':"-211px -39px"})  
+			},function(){
+				$(".close").css({'background-position':"-65px -39px"})
+			}) 	
+			$('.menu').click(function(){
+				console.log(111);
+				$('.box').show();
+			})
+			$('.close').click(function(){
+				console.log(111);
+				
+				$('.box').hide();
+			})
+			
+			var aLi=$(".list li");
+					var box1=$("<div class='posiA'></div>");
+					var box2=$("<div class='posiB'></div>");
+					aLi.hover(function(){
+						$(this).addClass("active")
+						$(this).find("a").css("color","green");
+						$(this).find("a").css("font-size","34px");	
+						var top=$(this).offset().top;
+						var left=$(this).offset().left;
+						console.log(top,left)
+						$(".move").css("top",top)
+						$(".move").css("left",left);
+					},function(){
+						$(this).removeClass("active");
+						$(this).find("a").css("color","#fff");
+						$(this).find("a").css("font-size","30px");	
+						$(".move").offset().top=0;
+						$(".move").offset().left=0;
+	
+					})
+		});
+		</script>
+	</body>
+</html>

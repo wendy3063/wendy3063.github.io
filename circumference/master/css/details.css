@@ -1,0 +1,51 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body,html{font-size: 12px;font-family: "微软雅黑";}
+img{display: block;}
+#wrapper{width: 100%;margin: 0 auto;overflow: hidden;}
+/*头部*/
+#header{width:100%;height: 58px;padding-top: 42px;}
+#header .logo{float:left;margin-left: 36px;}
+#header .menu{float:right;margin-right: 32px;}
+
+
+/*内容*/
+#content{width: 100%;}
+
+/*线条*/
+#content .line{width: 110%;height: 1px;background: #a4a4a4;transform:rotate(20deg);}
+#content .one{ margin-top: 150px;}
+#content .person-intro{width: 80%;height: 416px;margin: 220px auto;padding-top: 17px;}
+#content .person-pic{width: 335px;height: 415px;float:left;margin-right: 30px;overflow: hidden;}
+#content .person-pic img{width:730px;margin-left: -197px;}
+#content .person-introduce{width: 50%;height: 415px;float: left;}
+#content .person-introduce h2{font-size:26px;margin-bottom: 20px;}
+#content .short-line{width: 60px;height: 1px;background: #7f7f7f;margin-left: 20px;margin-bottom: 30px;}
+#content .English-name{font-size: 20px;color: #050100;line-height: 30px;}
+#content .Chinese-name{font-size: 16px;color: #131313;margin-bottom: 40px;}
+#content .introduce{font-size: 12px;line-height: 24px;color: #000;}
+#content .introduce p{margin-bottom: 10px;}
+#content .two{ margin-top: 250px;margin-left: -40px;transform:rotate(-20deg)}
+
+.production{width: 800px;height:700px;margin: 255px auto;padding-top: 20px;text-align: center;}
+.production h2{font-size:26px;margin-bottom: 20px;}
+.short-line1{width: 60px;height: 1px;background: #7f7f7f;margin: 0 auto;margin-bottom: 50px;}
+.production .works{width: 800px;height: 530px;}
+.production .works .list{width: 265px;height: 265px;overflow: hidden;float: left;margin: 0 1px 2px 0;cursor: pointer;}
+.production .works .list img{width: 660px;height: 324px;margin-left: -197px;margin-top: -30px;}
+
+.three{ margin-top: 150px;margin-left: -40px;}
+.achievement{width: 600px;height: 375px;margin: 255px auto;text-align: center;}
+.achievement h2{font-size:26px;margin-bottom: 20px;}
+.achievement .description{text-align: left;text-indent: 2em;column-count:2;column-gap: 30px}
+.achievement .description p{margin-bottom: 20px;line-height: 18px;color: #020001;font-weight:900;}
+
+
+
+/*尾部*/
+#footer{width: 100%;height: 170px;background: #717171;text-align: center;float:left;}
+#footer .footer-con{width: 500px;height: 170px;margin: 0 auto;}
+#footer .footer-con .design{width: 100px;height: 30px;float:left;padding:70px 0px;}
+#footer .footer-con .design .circle{width: 30px;height: 30px;border:1px solid #8e8e8e;border-radius: 50%;float: left;margin: 0 10px 0 10px ; }
+#footer .footer-con .design .square{width: 30px;height: 30px;border:1px solid #8e8e8e;float: left;transform:rotate(45deg);}
+#footer .footer-con .footer-text{width: 300px;height: 137px;float:left;line-height: 26px;color: #c1c1c1;padding-top: 33px;}

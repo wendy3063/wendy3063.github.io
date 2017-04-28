@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			html,body{width: 100%;height: 100%;}
+			img{max-width: 100%;max-height: 100%;display: block;margin: auto;/*background:url(img/42.jpg)no-repeat;background-size:cover;*/}
+		</style>
+	</head>
+	<body>
+		<img id="img" src="img/42.jpg"/>
+		<script type="text/javascript">
+			var arr=["img/42.jpg","img/43.jpg","img/44.jpg","img/45.jpg","img/46.jpg","img/47.jpg","img/48.jpg","img/49.jpg","img/50.jpg","img/51.jpg"];
+			var num=0;
+			console.log(arr.length)
+			$(document).on("mousewheel DOMMouseScroll", function (event) {
+		    var delta = (event.originalEvent.wheelDelta && (event.originalEvent.wheelDelta > 0 ? 1 : -1)) ||  // chrome & ie
+		                (event.originalEvent.detail && (event.originalEvent.detail > 0 ? -1 : 1));              // firefox
+		
+		    if (delta > 0) {
+		    	if(num>=1){
+		    	num--;
+		    	}
+		    } else if (delta < 0) {
+		    	if(num<=arr.length-2){
+		    	num++;
+		    	}
+		    }
+			$("#img").attr("src",arr[num]);
+			
+		});
+		</script>
+	</body>
+</html>

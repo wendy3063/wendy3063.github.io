@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{background: #ccc;position: fixed;width: 100%;height: 100%;margin:0 auto;padding-top:10%}
+			.top{width: 100%;height: 50px;}
+			.close{width: 30px;height: 30px;background:url(img/close.jpg)no-repeat;position: absolute;top:30px;right:30px;color: #fff;cursor: pointer;}
+			.close:hover{color: red;}
+			.list{width: 150px;height: 400px;margin: auto;list-style: none;}
+			.list li{width: 180px;height:90px;text-align: center;line-height: 90px;margin: 10px;}
+			.list li a{display: block;width: 180px;height: 50px;position: absolute;z-index: 2;font-size: 30px;font-weight: 600;}
+			.active{position: relative;border:2px solid green; } 
+			.posiA{width: 72px;height: 100px;position: absolute;left: 53px;top: -3px; background:#ccc;}
+			.posiB{width: 190px;height:22px;position: absolute;top: 37px;left: -5px; background:#ccc}
+			.color{color: green;}
+			.move{position: absolute;width: 120px;height: 62px;z-index:1;}
+			/*.list li:hover{border: 1px dashed green;}*/
+			/*.list li:hover a{color: green;}*/
+			.list li a{color: #fff;text-decoration: none;}
+		</style>
+		<script src='../js/jquery-1.12.3.js'></script>
+		<script type="text/javascript">
+			$(function(){
+				var aLi=$(".list li");
+				var box1=$("<div class='posiA'></div>");
+				var box2=$("<div class='posiB'></div>");
+				aLi.hover(function(){
+					$(this).addClass("active")
+					$(this).find("a").css("color","green");
+					$(this).find("a").css("font-size","34px");
+//					$(this).find("a").css("font-weight","600");		
+					var top=$(this).offset().top;
+					var left=$(this).offset().left;
+					console.log(top,left)
+					$(".move").css("top",top)
+					$(".move").css("left",left);
+				},function(){
+					$(this).removeClass("active");
+					$(this).find("a").css("color","#fff");
+					$(this).find("a").css("font-size","30px");
+//					$(this).find("a").css("font-weight","100");		
+					$(".move").offset().top=0;
+					$(".move").offset().left=0;
+
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<!--<div class="btn"></div>-->
+		<div class="box">
+			<div class="top">
+				<div class="close"></div>
+			</div>
+			<div class="move">
+					<div class='posiA'></div>
+					<div class='posiB'></div>
+			</div>
+			<ul class="list">	
+				<li>
+					<a href="##">主页</a>	
+				</li>
+				<li><a href="##">系列作品</a></li>
+				<li><a href="##">摄影构图</a></li>
+				<li><a href="##">摄影技巧</a></li>
+				<li><a href="##">摄影大师</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

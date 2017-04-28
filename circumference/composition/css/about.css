@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{width:100%;height:100%;position: relative;}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.logo{
+		width:111px;
+		height:111px;
+		background: url(../img/one01.png) no-repeat center;
+		background-position:-69px -44px;
+		position:absolute;
+		top:5%;
+		left:5%; -
+		z-index: 10;
+	}
+.menu{
+		width:69px;
+		height:52px;
+		position:absolute;
+		top:5%;
+		right:5%;
+		background: url(../img/one01.png) no-repeat center;
+		background-position:-69px -252px;
+		z-index: 10;
+	}
+.swiper-slide img{
+	width:100%;
+}	
+
+ul , li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+/*.area{
+	width: 100% ;
+	margin: 0 auto;
+	overflow: hidden;
+}*/
+header,section,footer{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.banner{
+	width: 100%;
+	height: auto;
+}
+.banner li {
+	width: 100%;
+}
+.banner  li img{
+	width: 100%;
+	height: auto;
+}
+.logo_left,.logo_right{
+	position: absolute;
+}
+.logo_left{     
+	width: 58px;          
+	height: 58px;
+	left: 38px;
+	top: 42px;
+	background: url(../img/1.png)-38px -24px no-repeat;
+}
+.logo_right{
+	width: 31px;
+	height: 23px;
+	right: 30px;
+	top: 42px;
+	background: url(../img/1.png)-38px -197px no-repeat ;
+}
+
+.rule_title{
+	width: 100%;
+	height: 38px;
+	padding-top: 20%;
+	font-size: 36px;
+	line-height: 38px;
+	text-indent: 30%;
+	font-weight: 700;
+	border-bottom: 1px solid #9f9f9f;
+}
+
+.section_center{
+	position: relative;
+	width: 100%;
+	height: 18%;
+}
+.section_center_2{
+	position: relative;
+	width: 100%;
+	height: 429px;
+}
+.rule_center{
+	width: 265px;
+	color: #010101;
+	font-size: 12px;
+	line-height: 24px;
+	position: absolute;
+	right: 40%;
+}
+
+/*      简介大盒子文字公共样式*/
+.jianjie{
+	width: 265px;
+	color: #010101;
+	font-size: 12px;
+	line-height: 24px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.rule_center_one,.rule_center_two{
+	text-indent: 24px;
+	padding-bottom: 12px;
+}
+
+footer{
+	background: #717171;
+}
+
+.footer_center{
+	position: relative;
+	width: 464px;
+	height: 90px;
+	margin: 0 auto;
+	padding: 40px 0;
+	text-align: center;
+	font-size: 10px;
+	line-height: 18px;
+	color: #9d9d9d;
+}
+.footer_logo_left,.footer_logo_right{
+	position: absolute;
+	width: 84px;
+	height: 44px;
+	background: url(../img/fangyuan..png) no-repeat;
+}
+
+.footer_logo_left{
+	left: 15px;
+	top: 65px;
+}
+.footer_logo_right{
+	right: 15px;
+	top: 65px;
+}
+
+
+/*
+ 	斜线 css
+ * */
+.slashlogo_left{
+	background: url(../img/1.png)-135px -24px;
+}
+.slashlogo_right{
+	background: url(../img/1.png)-109px -197px;
+}
+
+.rule_title_slalsh{
+	padding-top: 85px;
+	font-size: 36px;
+	height: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	text-indent: 149px;
+}
+
+
+.section_center_slalsh{
+	padding-top: 33px;
+	padding-bottom: 171px;
+	height: 257px;
+}
+
+.center_slalsh {
+	left: 149px;
+}
+
+.section_center_slash_2{
+	width: 100%;
+	height: 638px;
+}
+
+.center_slash_2{
+	width: 266px;
+	position: absolute;
+	top: 183px;
+	right: 147px;
+	height: 400px;
+}
+
+.center_slash_2 h2{
+	font-size: 36px;
+	line-height: 102px;
+}
+
+/* 斜线背景 1*/
+.slash_bg{
+	width: 110%;
+	position: absolute;
+	bottom: -300px;
+	height: 300px;
+	background: #e6e6e6;
+	transform: rotate(-16deg);
+	transform-origin: 0 0;
+}
+
+.slash_bg_2{
+	
+	width: 1800px;
+	position: absolute;
+	top: -300px;
+	height: 300px;
+	background: #e6e6e6;
+	transform: rotate(-16deg);
+	transform-origin: 1050px 500px;
+}
+
+
+
+/* work_center*/
+
+.work_center{
+	padding: 52px 0 65px 0;
+}
+
+.radius_box{
+	width: 1064px;
+	height: 1064px;
+	border-radius: 50%;
+	border: 1px solid #a5a5a5;
+	margin-left: -20px;
+	position: relative;
+}
+
+.work_center_1{
+	position: absolute;
+	
+}

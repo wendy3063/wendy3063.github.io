@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: url(../img/dian.png) no-repeat ;
+	background-size: 100% 100%;
+}
+.logo_left,.logo_right{
+	position: absolute;
+	cursor: pointer;
+}
+.logo_left{
+	width: 58px;
+	height: 58px;
+	background:url(../img/1.png) -38px -24px no-repeat;
+	left: 38px;
+	top: 42px;
+}
+.logo_right{
+	width: 30px;
+	height: 24px;
+	right: 30px;
+	top: 42px;
+	background: url(../img/1.png)-38px -197px;
+}
+.text {
+	width: 180px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 34px;
+	margin-left: -90px;
+	margin-top: -17px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+
+/*
+ 	pageTwo
+ * */
+.page_two,.page_three,.page_four{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.logo_left_two,.logo_right_two{
+	position: absolute;
+	cursor: pointer;
+}
+
+.logo_left_two{
+	width: 58px;
+	height: 58px;
+	background: url(../img/1.png)-135px -24px no-repeat;
+	left: 120%;
+	top: 100%;
+}
+.logo_right_two{
+	width: 30px;
+	height: 24px;
+	right: 120%;
+	top: 100%;
+	background: url(../img/1.png)-109px -197px no-repeat;
+}
+
+.text_box{
+	width: 105%;
+	height: 450px;
+	position: absolute;
+	bottom: -418px;
+	left: 0;
+	transform-origin: 0px 32px;
+	transform: rotate(-15deg);
+	
+}
+.text_box p{
+	width: 100%;
+	height: 34px;
+	line-height: 32px;
+	font-size: 32px;
+	color: #000000;
+	font-weight: 700;
+	
+}
+.slash_box{
+	width: 100%;
+	height: 700px;
+	background: #000000;
+}
+
+/*
+ page_three*/
+
+.logo_left_three,.logo_right_three{
+	position: absolute;
+	cursor: pointer;
+}
+
+.logo_left_three{
+	width: 58px;
+	height: 58px;
+	background: url(../img/1.png)-135px -24px no-repeat;
+	left: 38px;
+	top: 42px;
+}
+.logo_right_three{
+	width: 30px;
+	height: 24px;
+	right: 30px;
+	top: 42px;
+	background: url(../img/1.png)-109px -197px no-repeat;
+}
+
+.text_box_three{
+	position: absolute;
+	width: 762px;
+	height: 584px;
+	left: 50%;
+	top: 50%;
+	margin-left: -381px;
+	margin-top: -282px;
+	background: #fff;
+	overflow: hidden;
+	
+	
+}
+
+@keyframes route{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.radius_box {
+	width: 762px;
+	height: 762px;
+	border-radius: 50%;
+	background: #000;
+	position: absolute;
+	top: -89px;
+	left: 120%;
+	
+}
+.radius{
+	width: 342px;
+	height: 342px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -171px;
+	margin-top: -171px;
+	text-align: center;
+	font-size: 34px;
+	font-weight: 700;
+	color: #000;
+	line-height: 342px;
+	cursor: pointer;
+	
+}
+
+
+/*page_four*/
+
+.logo_left_four,.logo_right_four{
+	position: absolute;
+	cursor: pointer;
+}
+
+.logo_left_four{
+	width: 58px;
+	height: 58px;
+	background: url(../img/1.png)-135px -24px no-repeat;
+	left: 38px;
+	top: 42px;
+}
+.logo_right_four{
+	width: 30px;
+	height: 24px;
+	right: 30px;
+	top: 42px;
+	background: url(../img/1.png)-109px -197px no-repeat;
+}
+
+.bottom{
+	position: absolute;
+	width: 100%;
+	height: 177px;
+	background: #000000;
+	bottom: 0;
+}
+
+.bigRadius{
+	width: 232px;
+	height: 232px;
+	border-radius: 50%;
+	background: #000;
+	text-align: center;
+	line-height: 232px;
+	font-size: 34px;
+	color: #FFFFFF;
+	font-weight: 700;
+	position: absolute;
+	bottom: 177px;
+	margin-left: -232px;
+	left: 450px;
+	
+	
+}
+.minRadius{
+	width: 136px;
+	height: 136px;
+	border-radius: 50%;
+	background: #000000;
+	color: #FFFFFF;
+	font-weight: 700;
+	position: absolute;
+	bottom: 177px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 135px;
+	font-weight: 700;
+	margin-right: -136px;
+	right: 353px;
+	
+}
+@keyframes balance{
+	0%{
+		left: 450px;
+		transform: rotate(0deg);
+	}
+	25%{
+		left: 232px;
+		transform: rotate(-180deg);
+	}
+	75%{
+		left: 50% ;
+		transform: rotate(540deg);
+	}
+	100%{
+		left: 450px;
+		transform: rotate(360deg);
+	}
+}
+@keyframes balanceMin{
+	0%{
+		right: 353px ;
+		transform: rotate(0deg);
+	}
+	25%{
+		right: 136px;
+		transform: rotate(360deg);
+	}
+	75%{
+		right: 51%;
+		transform: rotate(-1080deg);
+	}
+	100%{
+		right: 353px;
+		transform: rotate(-720deg);
+	}
+}

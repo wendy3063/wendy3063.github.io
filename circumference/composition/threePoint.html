@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>三分法则</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/about.css"/>
+		<style type="text/css">
+			
+		</style>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/swiper.min.js" ></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init() ;
+		</script>
+	</head>
+	<body>
+		<!--<div class="area">-->
+			<header>
+				<div class="swiper-container">	
+					  <div class="swiper-wrapper">	
+						<div id="one" class="swiper-slide">
+							<img src='imgs/sf1.jpg' />
+						</div>
+						<div id="two" class="swiper-slide">
+							<!--<div class="logo"></div>
+							<div class="menu"></div>-->
+							<img src='imgs/sf2.jpg' />
+						</div>
+						<div id="three" class="swiper-slide">
+							<!--<div class="logo"></div>-->
+							<!--<div class="menu"></div>-->
+							<img src='imgs/sf3.jpg' />
+						</div>
+						
+					  </div>
+					  <div class="logo"></div>
+						<div class="menu"></div>
+					  <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+				</div>
+			</header>
+			<section>
+				<div class="rule_title wow slideInDown" data-wow-duration="2s" data-wow-delay="0.2s">三分法则</div>
+			</section>
+			<section class="section_center">
+				<div class="rule_center">
+					<div class="rule_center_one wow slideInRight" data-wow-delay="0.4s">
+						三分构图法又称之为     并子格构图   ,是一种在摄影 ,绘画 ,设计等艺术经常使用的构图手段.
+						摄影师需要将场景用两条竖线和两条横线分割可以得到4个交叉点,将需要表现的重点,放置在4个交叉点中的一个即可 .
+					</div>
+					<div class="rule_center_two wow slideInRight" data-wow-delay="0.6s">
+						这个构图法可以说是最适合初学者学摄影的构图方法之一.画面横竖分3份.相交点可放置主体形态,适宜多形态平行焦点的主体.可表现大空间.小对象.也可反相选择.表现鲜明.构图简练.近景远景微观等等通吃
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="rule_title wow slideInDown" data-wow-duration="2s" data-wow-delay="0.2s">三分法原理</div>
+			</section>
+					<section class="section_center_2">
+				<div class="rule_center">
+					<div class="rule_center_one wow slideInLeft">
+						三分法则的原理是 ,人们的目光总是自然地落在一副画面三分一二处的位置上 ,将你拍摄的物品放在这些位置 ,效果会比位于中心位置更好 ,更能抓住人们的眼球 . 摄影时 , 如何可以将主体安排在这4个分割点附近 ,就可以更好地发挥拍摄主体在画面上的组织作用 ,令周围的景物协调感和联系感加强 ,视觉效果更好 .
+					</div>
+					<div class="rule_center_two wow slideInLeft">
+						当然这条规则是可以灵活运用的  趣味中心不一定要正好在交叉点上  但大致得在那一带 .  画面右端那些交叉点通常被认为是最强烈的 .
+					</div>
+				</div>
+		</section>
+		<footer>
+			<div class="footer_center">
+				<div class="footer_logo_left"></div>
+				<div class="footer_logo_right"></div>
+				<p>邮编: 34100</p>
+				<p>电话: 0797-328522</p>
+				<p>版权所有: 方圆摄影有限公司</p>
+				<p>邮箱: fangyuansheying@163.com</p>
+			</div>
+		</footer>
+		<!--</div>-->
+		<script>
+			$(function(){
+				var swiper = new Swiper('.swiper-container', {
+					loop:true,
+					pagination: '.swiper-pagination',
+			        nextButton: '.swiper-button-next',
+			        prevButton: '.swiper-button-prev',
+			        paginationClickable: true,
+			        spaceBetween: 30,
+			        centeredSlides: true,
+			        autoplay: 5000,
+			        autoplayDisableOnInteraction: false
+		    	});
+	    	
+	    	});
+			
+			
+			
+		</script>
+	</body>
+</html>

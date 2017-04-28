@@ -1,0 +1,51 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body,html{font-size: 12px;font-family: "微软雅黑"}
+img{display: block;}
+#wrapper{width: 100%;margin: 0 auto;background: #FFF;}
+/*头部*/
+#header{width:100%;height: 58px;padding-top: 42px;}
+#header .logo{float:left;margin-left: 36px;}
+#header .menu{float:right;margin-right: 32px;}
+
+/*内容*/
+#content{width: 100%;padding-top: 120px;overflow: hidden;}
+/*线条*/
+#content .line{width: 110%;height: 1px;background: #a4a4a4;transform:rotate(20deg);}
+#content .one, .three{margin: 250px 0 325px -50px;position: relative;}
+#content .two{transform:rotate(-20deg);margin: 750px 0 760px -50px;position: relative;}
+/*人物*/
+#content .person{position: absolute;width: 350px;height: 315px;transform:rotate(-20deg);}
+/*人物图片*/
+#content .person .person-pic{width: 400px;}
+#content .person .person-pic img{width: 400px;}
+/*人物姓名*/
+#content .person .person-name{width: 180px;height: 96px;border:1px solid #236e47;position: absolute;right: 0;top:0;}
+#content .person .person-name .English{font-size: 24px;color:#236e47;font-weight: 900;margin-left: 5px ;margin-top: 5px}
+#content .person .person-name .English b{font-size: 40px;}
+#content .person .person-name .Chinese{font-size: 14px;color:#000;text-align: center;margin-top: 10px; }
+/*布列松、何潘*/
+#content .Bresson{left:10%;top:-113px;}
+#content .Bresson .person-pic{position: absolute;left:-100px;top:50px;z-index: 1;}
+/*优素福、孙郡*/
+#content .Yousof{left:55%;top:-113px;}
+#content .Yousof .person-pic{position: absolute;left:-100px;top:50px;z-index: 1;}
+/*韦斯顿*/
+#content .two .Weston{transform:rotate(20deg);left:20%;top:-51px;}
+#content .Weston .person-pic{position: absolute;z-index: 1;}
+#content .Weston .person-name{width: 180px;height: 96px;border:1px solid #236e47;position: absolute;left: -43px;top:-53px;}
+#content .Weston .person-name .English{font-size: 24px;color:#236e47;font-weight: 900;margin-right: 5px ;margin-top: 5px;text-align: right;}
+/*亚当斯*/
+#content .two .Adams{transform:rotate(20deg);left:60%;top:-51px;}
+#content .Adams .person-pic{position: absolute;z-index: 1;}
+#content .Adams .person-name{width: 180px;height: 96px;border:1px solid #236e47;position: absolute;left: -43px;top:-53px;}
+#content .Adams .person-name .English{font-size: 24px;color:#236e47;font-weight: 900;margin-right: 10px ;margin-top: 5px;text-align: right;}
+
+
+/*尾部*/
+#footer{width: 100%;height: 170px;background: #717171;margin-top: 200px;text-align: center;}
+#footer .footer-con{width: 500px;height: 170px;margin: 0 auto;}
+#footer .footer-con .design{width: 100px;height: 30px;float:left;padding:70px 0px;}
+#footer .footer-con .design .circle{width: 30px;height: 30px;border:1px solid #8e8e8e;border-radius: 50%;float: left;margin: 0 10px 0 10px ; }
+#footer .footer-con .design .square{width: 30px;height: 30px;border:1px solid #8e8e8e;float: left;transform:rotate(45deg);}
+#footer .footer-con .footer-text{width: 300px;height: 137px;float:left;line-height: 26px;color: #c1c1c1;padding-top: 33px;}

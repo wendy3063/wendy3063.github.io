@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>系列作品</title>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<style>
+			*{margin:0;padding:0}
+			body,html{width:100%;height:100%;position: relative;}
+			.swiper-container {
+		        width: 100%;
+		        height: 100%;
+		        margin-left: auto;
+		        margin-right: auto;
+		    }
+		    .swiper-slide {
+		        text-align: center;
+		        font-size: 18px;
+		        background: #fff;
+		
+		        /* Center slide text vertically */
+		        display: -webkit-box;
+		        display: -ms-flexbox;
+		        display: -webkit-flex;
+		        display: flex;
+		        -webkit-box-pack: center;
+		        -ms-flex-pack: center;
+		        -webkit-justify-content: center;
+		        justify-content: center;
+		        -webkit-box-align: center;
+		        -ms-flex-align: center;
+		        -webkit-align-items: center;
+		        align-items: center;
+		    }
+			#one{width:100%;
+				 height:100%;
+				 position:relative;
+				 background:#C9CBCA url(img/0.png)no-repeat;
+				 background-size:cover;
+			}
+			#one .oneWz{
+				width:300px;
+				height:300px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:35%;
+				right:10%;
+				text-align:center;
+				line-height: 300px;
+			}
+			#one .oneWz span{
+				font-size:44px;
+				color:#C9CBCA;
+				font-weight: 600;
+			}
+			#two{width:100%;
+				 height:100%;
+				 position:relative;
+				 top:0;
+				 left:0;
+				 background:#C9CBCA url(img/02.png)no-repeat;
+				 background-size:cover;
+			}
+			#two .twoWz{
+				width:300px;
+				height:300px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:35%;
+				left:10%;
+				text-align:center;
+				line-height: 300px;
+			}
+			#two .twoWz span{
+				font-size:44px;
+				color:#C9CBCA;
+				font-weight: 600;
+			}
+			#three{width:100%;
+				 height:100%;
+				 position:relative;
+				 top:0;
+				 left:0;
+				 background:#C9CBCA url(img/03.png)no-repeat;
+				 background-size:cover;
+			}
+			#three .threeWz{
+				width:300px;
+				height:300px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:35%;
+				right:10%;
+				text-align:center;
+				line-height: 300px;
+			}
+			#three .threeWz span{
+				font-size:44px;
+				color:#C9CBCA;
+				font-weight: 600;
+			}	 	 
+			#four{width:100%;
+				 height:100%;
+				 position:relative;
+				 top:0;
+				 left:0;
+				 background:#C9CBCA url(img/04.png)no-repeat;
+				 background-size:cover;
+			}
+			#four .fourWz{
+				width:300px;
+				height:300px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:35%;
+				left:10%;
+				text-align:center;
+				line-height: 300px;
+			}
+			#four .fourWz span{
+				font-size:44px;
+				color:#C9CBCA;
+				font-weight: 600;
+			}	 	 
+			#five{width:100%;
+				 height:100%;
+				 position:relative;
+				 top:0;
+				 left:0;
+				 background:#C9CBCA url(img/05.png)no-repeat;
+				 background-size:cover;
+			}
+			#five .fiveWz{
+				width:300px;
+				height:300px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:35%;
+				right:10%;
+				text-align:center;
+				line-height: 300px;
+			}
+			#five .fiveWz span{
+				font-size:44px;
+				color:#C9CBCA;
+				font-weight: 600;
+			}	 	 
+			/*#six{width:100%;
+				 height:100%;
+				 position: absolute;
+				 top:0;
+				 left:0;
+				 background:#C9CBCA url(img/06.png)no-repeat;
+				 background-size:cover;
+			}
+			#six .sixWz{
+				width:300px;
+				height:300px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:35%;
+				left:10%;
+				text-align:center;
+				line-height: 300px;
+			}
+			#six .sixWz span{
+				font-size:44px;
+				color:#C9CBCA;
+				font-weight: 600;
+			}	*/
+			.logo{
+					width:57px;
+					height:58px;
+					background: url(../index/img/1.png)no-repeat center;
+					background-position:-136px -24px;
+					position:fixed;
+					top:5%;
+					left:5%;
+					z-index: 10;
+				}
+				.menu{
+					width:33px;
+					height:27px;
+					position:fixed;
+					top:5%;
+					right:5%;
+					background: url(../index/img/1.png) no-repeat center;
+					background-position:-109px -195px;
+					z-index: 10;
+				} 
+				.box{background: #ccc;position:absolute;top:0;left:0;width: 100%;height: 100%;margin:0 auto;z-index: 10;padding-top:5%}
+				.top{width: 100%;height: 50px;}
+				.close{width: 30px;height: 30px;background:url(../index/img/ca.png)no-repeat;background-position:-65px -39px;position: absolute;top:5%;right:10%;color: #fff;cursor: pointer;}
+				.close:hover{color: red;}
+				.list{width: 150px;height: 400px;margin: auto;list-style: none;}
+				.list li{width: 180px;height:90px;text-align: center;line-height: 90px;margin: 10px;}
+				.list li a{display: block;width: 180px;height: 50px;position: absolute;z-index: 2;font-size: 30px;font-weight: 600;}
+				.active{position: relative;border:2px solid green; } 
+				.posiA{width: 72px;height: 100px;position: absolute;left:55px;top: -3px; background:#ccc;}
+				.posiB{width: 190px;height:20px;position: absolute;top: 40px;left: -5px; background:#ccc}
+				.color{color: green;}
+				.move{position: absolute;width: 120px;height: 62px;z-index:1;}
+				.list li a{color: #fff;text-decoration: none;}
+	  	 
+			
+		</style>
+	</head>
+	<body>
+		<div class="logo"></div>
+		<div class="menu"></div>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">	
+			<div id="one" class="swiper-slide">
+				<div class="oneWz">
+					<span>肖像系列</span>
+				</div>
+			</div>
+			<div id="two" class="swiper-slide">
+				<div class="twoWz">
+					<span>大头照系列</span>
+				</div>
+			</div>
+			<div id="three" class="swiper-slide">
+				<div class="threeWz">
+					<span>孕妇系列</span>
+				</div>
+			</div>
+			<div id="four" class="swiper-slide">
+				<div class="fourWz">
+					<span>运动系列</span>
+				</div>
+			</div>
+			<div id="five" class="swiper-slide">
+				<div class="fiveWz">
+					<span>全家福系列</span>
+				</div>
+			</div>
+		  </div>
+		  <!-- Add Pagination -->
+       	 <div class="swiper-pagination"></div>
+		</div>
+		
+		
+		<div class="box" style="display: none;">
+			<div class="top">
+				<div class="close"></div>
+			</div>
+			<div class="move">
+					<div class='posiA'></div>
+					<div class='posiB'></div>
+			</div>
+			<ul class="list">	
+				<li>
+					<a href="##">主页</a>	
+				</li>
+				<li><a href="##">系列作品</a></li>
+				<li><a href="##">摄影构图</a></li>
+				<li><a href="##">摄影技巧</a></li>
+				<li><a href="##">摄影大师</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+	<script type="text/javascript" src="../js/swiper.min.js" ></script>
+	<script>
+		$(function(){
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+		        pagination: '.swiper-pagination',
+		        direction: 'vertical',
+		        slidesPerView: 1,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        mousewheelControl: true
+	    	});
+		    
+			$(".oneWz").hover(function(){
+				$(".oneWz").css('background','#266E46')  
+				},function(){
+				$(".oneWz").css('background','#fff')  
+			})
+			$(".twoWz").hover(function(){
+				$(".twoWz").css('background','#266E46')  
+				},function(){
+				$(".twoWz").css('background','#fff')  
+			}) 
+			$(".threeWz").hover(function(){
+				$(".threeWz").css('background','#266E46')  
+				},function(){
+				$(".threeWz").css('background','#fff')  
+			}) 
+			$(".fourWz").hover(function(){
+				$(".fourWz").css('background','#266E46')  
+				},function(){
+				$(".fourWz").css('background','#fff')  
+			}) 
+			$(".fiveWz").hover(function(){
+				$(".fiveWz").css('background','#266E46')  
+				},function(){
+				$(".fiveWz").css('background','#fff')  
+			}) 
+			
+			$(".logo").hover(function(){
+			$(".logo").css({'background-position':"-233px -24px"})  
+			},function(){
+				$(".logo").css({'background-position':"-136px -24px"})
+			}) 	
+			$(".menu").hover(function(){
+				$(".menu").css({'background-position':"-179px -195px"})  
+			},function(){
+				$(".menu").css({'background-position':"-109px -195px"})
+			}) 	
+			$(".close").hover(function(){
+				$(".close").css({'background-position':"-211px -39px"})  
+			},function(){
+				$(".close").css({'background-position':"-65px -39px"})
+			}) 	
+			$('.menu').click(function(){
+				console.log(111);
+				$('.box').show();
+			})
+			$('.close').click(function(){
+				console.log(111);
+				$('.box').hide();
+			})
+			
+			var aLi=$(".list li");
+					var box1=$("<div class='posiA'></div>");
+					var box2=$("<div class='posiB'></div>");
+					aLi.hover(function(){
+						$(this).addClass("active")
+						$(this).find("a").css("color","green");
+						$(this).find("a").css("font-size","34px");	
+						var top=$(this).offset().top;
+						var left=$(this).offset().left;
+						console.log(top,left)
+						$(".move").css("top",top)
+						$(".move").css("left",left);
+					},function(){
+						$(this).removeClass("active");
+						$(this).find("a").css("color","#fff");
+						$(this).find("a").css("font-size","30px");	
+						$(".move").offset().top=0;
+						$(".move").offset().left=0;
+	
+					})
+			
+			$(".oneWz").click(function(){
+				location.href='one.html';
+			})
+			$(".twoWz").click(function(){
+				location.href='two.html';
+			})
+			$(".threeWz").click(function(){
+				location.href='three.html';
+			})
+			$(".fourWz").click(function(){
+				location.href='four.html';
+			})		
+			$(".fiveWz").click(function(){
+				location.href='five.html';
+			})
+			
+			
+			
+			
+		})
+		
+		
+		
+		
+	</script>
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>摄影技巧</title>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<link rel="stylesheet" href="css/skill.css" />
+		
+	</head>
+	<body>
+		<!-- Swiper -->
+    <div class="swiper-container" id="oneindex">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide one">
+            	<div class="oneImg">
+		            <div class="subtitle">
+						<span>逆光摄影</span>
+					</div>
+            		<img src="img/one1.png" style="z-index: 10;"/>
+            	</div>
+            </div>
+            <div class="swiper-slide">
+            	<div class="twoImg">
+		            <div class="subtitle2">
+						<span>长曝光摄影</span>
+					</div>
+            		<img src="img/two2.png" style="z-index: 10;"/>
+            	</div>
+            </div>
+            <div class="swiper-slide">
+            	<div class="threeImg">
+		            <div class="subtitle3">
+						<span>多重曝光</span>
+					</div>
+            		<img src="img/one1.png" style="z-index: 10;"/>
+            	</div>
+            </div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../js/swiper.min.js" ></script>
+		 <script>
+		 	$(function(){
+			    var swiper = new Swiper('.swiper-container', {
+			        loop: true,
+		        pagination: '.swiper-pagination',
+		        direction: 'vertical',
+		        slidesPerView: 1,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        mousewheelControl: true
+			  });
+		 	$(".subtitle").click(function(){
+		 		location.href='skill01.html';
+		 	})
+		 	$(".subtitle").click(function(){
+		 		location.href='skill02.html';
+		 	})
+		 	$(".subtitle").click(function(){
+		 		location.href='skill03.html';
+		 	})
+//		 		
+		 		
+		 		
+		 		
+		 		
+		 	})
+		  
+		  
+		  
+		  
+    	</script>
+		
+	</body>
+</html>
